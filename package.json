@@ -1,0 +1,65 @@
+{
+  "name": "redir-cli",
+  "description": "Input processing command line toolkit",
+  "version": "0.0.0",
+  "author": "Calvin Yu <calvin@rylabs.io>",
+  "bin": {
+    "redir": "./bin/run"
+  },
+  "bugs": "https://github.com/RYLabs/redir-cli/issues",
+  "dependencies": {
+    "@oclif/command": "^1",
+    "@oclif/config": "^1",
+    "@oclif/plugin-help": "^2",
+    "@types/lodash": "^4.14.136",
+    "@types/moment-timezone": "^0.5.12",
+    "get-stdin": "^7.0.0",
+    "lodash": "^4.17.15",
+    "moment-timezone": "^0.5.26",
+    "netrc": "^0.1.4",
+    "nightingale": "^9.2.3",
+    "nightingale-console": "^6.1.1",
+    "redir-core": "file:../redir-core",
+    "tslib": "^1"
+  },
+  "devDependencies": {
+    "@oclif/dev-cli": "^1",
+    "@oclif/tslint": "^3",
+    "@types/node": "^10",
+    "globby": "^10",
+    "ts-node": "^8",
+    "tslint": "^5",
+    "typescript": "^3.3"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "files": [
+    "/bin",
+    "/lib",
+    "/npm-shrinkwrap.json",
+    "/oclif.manifest.json"
+  ],
+  "homepage": "https://github.com/RYLabs/redir-cli",
+  "keywords": [
+    "oclif"
+  ],
+  "license": "MIT",
+  "main": "lib/index.js",
+  "oclif": {
+    "commands": "./lib/commands",
+    "bin": "redir",
+    "plugins": [
+      "@oclif/plugin-help"
+    ]
+  },
+  "repository": "RYLabs/redir-cli",
+  "scripts": {
+    "postpack": "rm -f oclif.manifest.json",
+    "posttest": "tslint -p . -t stylish",
+    "prepack": "rm -rf lib && tsc -b && oclif-dev manifest && oclif-dev readme",
+    "test": "echo NO TESTS",
+    "version": "oclif-dev readme && git add README.md"
+  },
+  "types": "lib/index.d.ts"
+}
