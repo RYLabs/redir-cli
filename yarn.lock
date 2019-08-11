@@ -1169,8 +1169,10 @@ redeyed@~2.1.0:
   dependencies:
     esprima "~4.0.0"
 
-"redir-core@file:../redir-core":
-  version "0.2.4"
+redir-core@0.2.5:
+  version "0.2.5"
+  resolved "https://registry.yarnpkg.com/redir-core/-/redir-core-0.2.5.tgz#65159cd49de327dd68f8a1507edd561de3b27be7"
+  integrity sha512-EuOPBbMOklwxnzTIHhpYhvoXggLWbL8yDMh5UN8bmbGRYGTpuv+umKQWr7PJ8g1CEJ8QQFL3t1LLzSRMsU5biw==
   dependencies:
     "@types/lodash" "^4.14.134"
     "@types/node-fetch" "^2.3.7"
