@@ -1,7 +1,7 @@
 {
   "name": "redir-cli",
   "description": "Input processing command line toolkit",
-  "version": "0.0.0",
+  "version": "0.2.4",
   "author": "Calvin Yu <calvin@rylabs.io>",
   "bin": {
     "redir": "./bin/run"
